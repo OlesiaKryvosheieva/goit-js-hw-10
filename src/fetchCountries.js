@@ -1,5 +1,5 @@
 function fetchCountries(name) {
-  if ((name = '')) {
+  if ((name === '')) {
     return;
   }
 
