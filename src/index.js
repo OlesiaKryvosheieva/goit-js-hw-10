@@ -28,7 +28,7 @@ function searchInfoOfCountry(e) {
           'Too many matches found. Please enter a more specific name.'
         );
         return;
-      } else if (countries.length >= 2 && countries.length < 10) {
+      } else if (countries.length >= 2 && countries.length <= 10) {
         const html = countries.reduce(
           (markUp, country) => createListOfCountries(country) + markUp,
           ''
